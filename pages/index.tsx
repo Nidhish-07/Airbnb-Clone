@@ -7,7 +7,7 @@ import Modal from "../components/UI/Modal";
 const Home: NextPage = () => {
   return (
     <div>
-      <Modal isOpen />
+      <Modal isOpen actionLabel="Submit"/>
       <Header />
     </div>
   );

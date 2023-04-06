@@ -3,7 +3,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import AirBnbLogo from "../public/images/airbnb.png";
+import AirBnbLogo from "../../public/images/airbnb.png";
 
 'use client'
 

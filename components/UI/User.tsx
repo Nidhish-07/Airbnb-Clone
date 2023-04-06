@@ -3,7 +3,7 @@
 import React from "react";
 
 import Image from "next/image";
-import UserLogo from "../public/images/user.png";
+import UserLogo from "../../public/images/user.png";
 
 type Props = {};
 

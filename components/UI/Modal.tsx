@@ -80,7 +80,7 @@ const Modal: React.FC<ModalProps> = ({
             ${showModal ? "opacity-100" : "opacity-0"}`}
           >
             <div className="translate h-full  lg:h-auto md:h-auto border-0 shadow-lg rounded-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-              <div className="flx items-center p-6 rounded-t justify-center relative border-b ">
+              <div className="flex items-center p-6 rounded-t justify-center relative border-b ">
                 <button
                   className="p-1 border-0 hover:opacity-75 absolute transition left-9"
                   title="Close button"
@@ -107,6 +107,7 @@ const Modal: React.FC<ModalProps> = ({
                     onClick={submitHandler}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>

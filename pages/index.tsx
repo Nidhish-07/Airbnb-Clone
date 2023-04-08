@@ -3,11 +3,14 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/UI/Header";
 import Modal from "../components/UI/Modal";
+import RegisterModal from "../components/UI/RegisterModal";
+import ToasterProvider from "../providers/ToasterProvider";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Modal isOpen actionLabel="Submit"/>
+      <ToasterProvider/>
+      <RegisterModal />
       <Header />
     </div>
   );

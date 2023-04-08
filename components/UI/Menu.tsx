@@ -6,6 +6,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 import User from "./User";
 import Item from "./Item";
 
+import userRegisterModal from "../../hooks/registrationModal";
+
 type Props = {};
 
 const Menu = (props: Props) => {
@@ -14,6 +16,9 @@ const Menu = (props: Props) => {
   const toggleOpen = React.useCallback(() => {
     setOpen((value) => !value);
   }, []);
+
+  const registerModal = userRegisterModal();
+
   return (
     <div className="relative">
       <div className="flex flex-row item-center gap-3">
@@ -38,9 +43,8 @@ const Menu = (props: Props) => {
         <div className="absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm">
           <div className="flex flex-col cursor-pointer">
             <div>
-
-            <Item onClick={() => {}} label="Login"></Item>
-            <Item onClick={() => {}} label="Sign Up"></Item>
+              <Item onClick={() => {}} label="Login"></Item>
+              <Item onClick={registerModal.onOpen} label="Sign Up"></Item>
             </div>
           </div>
         </div>

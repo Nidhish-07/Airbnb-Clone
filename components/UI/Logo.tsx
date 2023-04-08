@@ -5,8 +5,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import AirBnbLogo from "../../public/images/airbnb.png";
 
-'use client'
-
+("use client");
 
 type Props = {};
 
